@@ -14,4 +14,4 @@ console.log(Object.is(+0, -0)); // false
 console.log(Object.is({}, {})); // false
 
 const obj = {};
-console.log(Object.is(obj, obj)); // true
+console.log(Object.is(obj, obj)); // true            
