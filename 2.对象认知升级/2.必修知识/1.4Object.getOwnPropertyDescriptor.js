@@ -6,3 +6,4 @@ Object.defineProperty(obj, "name", {
 const des = Object.getOwnPropertyDescriptor(obj, "name");
 
 console.log("name:", des)
+

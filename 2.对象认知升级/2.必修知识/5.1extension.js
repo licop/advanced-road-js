@@ -1,4 +1,6 @@
-
+// Object.preventExtensions 不允许对象扩展
+// Object.isExtensible 查看对象是否可扩展
+  
 //1. Object.preventExtensions
 var obj = { name: "张三" };
 var obj1 = { name: "李四" }

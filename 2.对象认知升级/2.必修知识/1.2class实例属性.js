@@ -5,11 +5,11 @@ class Person {
         this.name = name
         this.age = age
     }
-    
+    // 实例属性
     getName = ()=> {
         return this.name
     }
-    
+    // 原型属性
     getAge(){
         return this.age
     }
@@ -18,6 +18,9 @@ class Person {
 const hasOwn = Object.hasOwnProperty;
 const print = console.log;
 
-var person = new Person();
-print("getName:", hasOwn.call(person,"getName"))
-print("getAge:", hasOwn.call(person,"getAge"))
+var person = new Person('licop', '27');
+print("getName:", hasOwn.call(person,"getName")) // true
+print("getAge:", hasOwn.call(person,"getAge"))  // false
+
+console.log(person.getAge())
+console.log(person.getName())
